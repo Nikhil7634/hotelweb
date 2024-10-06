@@ -7149,3 +7149,6 @@ html:not(.body-menu-opened) .hamburger .bottom-bun {
     width: 100%;
   }
 }
+html{
+  scroll-behavior: smooth;
+}
