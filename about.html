@@ -14,6 +14,83 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
     <link href="css/responsive.css" rel="stylesheet" />
+
+
+    <style>
+      /* Popover styling */
+      .mypopover {
+          position: fixed;
+          top: 50%;
+          right: 0%;
+          transform: translate(-0%, -50%);
+          background-color: #fff;
+           border-radius: 8px;
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+          z-index: 9999;
+          display: none;
+          
+          
+          
+      }
+    
+  
+      .popover-content h3 {
+          margin-top: 0;
+          font-size: 24px;
+          font-weight: bold;
+      }
+  
+      .popover-content p {
+          font-size: 16px;
+          margin-bottom: 20px;
+      }
+  
+      .btn-close {
+          padding: 10px 20px;
+          background-color: #f44336;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+          position: absolute;
+          top: 5%;
+          z-index: 10;
+          right: 0;
+      }
+  
+      .btn-close:hover {
+          background-color: #d32f2f;
+      }
+      .sticky-button{
+        display: flex;
+        flex-flow: column;
+        position: fixed;
+        bottom: 12%;
+        right: 3%;
+        z-index: 10000;
+        gap: 20px;
+      }
+      .sticky-button a{
+        padding: 8px 20px;
+        
+      }
+      .sticky-button a:nth-child(1){
+        background: rgb(88, 131, 249);
+        color: white;
+  
+      }
+      .sticky-button a:nth-child(2){
+        background: rgb(23, 187, 23);
+        color: white;
+  
+      }
+      .sticky-button a:nth-child(3){
+      background: rgb(227 196 143);
+      color: white;
+
+    }
+  </style>
   </head>
 
   <body>
@@ -24,6 +101,70 @@
           alt=""
       /></a>
     </div>
+
+    <div id="popover" class="mypopover"  >
+      <div class="popover-content"  >
+        <section class="fluid-section">
+          <div class="outer-container">
+              <div class=" ">
+                  <!--Col-->
+                
+                  <!--Col-->
+                  <div class="content-col  ">
+                      <div class="right-bg"><img src="images/background/bg-12.png" alt="" title=""></div>
+                      <div class="inner clearfix wow fadeInRight" data-wow-duration="1500ms" data-wow-delay="0ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInRight;">
+                          <div class="content-box">
+                              
+                              <div class="info">
+                                  <div class="signature"><img src="images/resource/signature-2.png" alt="" title=""></div>
+                               </div>
+                              <div class="link-box">
+                                  <a href="https://www.doordash.com/store/coastal-curries-of-india-sunnyvale-32049997/?preview=1" class="theme-btn btn-style-two clearfix">
+                                      <span class="btn-wrap">
+                                          <span class="text-one">Delivery</span>
+                                          <span class="text-two">Delivery</span>
+                                      </span>
+                                  </a>
+                                  
+                              </div>
+                              <div class="link-box">
+                                <a href="https://www.doordash.com/store/coastal-curries-of-india-sunnyvale-32049997/?preview=1" class="theme-btn btn-style-two clearfix">
+                                    <span class="btn-wrap">
+                                        <span class="text-one">Pick Up</span>
+                                        <span class="text-two">Pick Up</span>
+                                    </span>
+                                </a>
+                                
+                            </div>
+                            <div class="link-box">
+                              <a href="./menu.pdf" class="theme-btn btn-style-two clearfix">
+                                  <span class="btn-wrap">
+                                      <span class="text-one">Our Menu</span>
+                                      <span class="text-two">Our Menu</span>
+                                  </span>
+                              </a>
+                              
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+  
+              </div>
+          </div>
+      </section>
+          
+      </div>
+      <button id="close-popover" class="btn-close">Close</button>
+  </div>
+
+
+  <div class="sticky-button">
+    <a href="https://www.doordash.com/store/coastal-curries-of-india-sunnyvale-32049997/?preview=1">Delivery</a>
+    <a href="https://www.doordash.com/store/coastal-curries-of-india-sunnyvale-32049997/?preview=1">Pick Up</a>
+    <a href="./menu.pdf">Our Menu</a>
+
+
+  </div>
     <div class="page-wrapper">
       <!-- Main Header-->
       <header class="main-header header-down">
@@ -157,7 +298,7 @@
           <div class="side-menu">
             <ul class="navigation clearfix">
               <li  ><a href="index.html">Home</a></li>
-              <li><a href="menu-list-3.html.html">Menus</a></li>
+              <li><a href="menu-list-3.html">Menus</a></li>
               <li><a href="./about.html">About Us</a></li>
 
               <li><a href="./contact-us.html">Contact</a></li>
